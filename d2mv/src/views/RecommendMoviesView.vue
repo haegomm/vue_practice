@@ -1,27 +1,13 @@
 <template>
-  <div>
-    <!-- <nav> -->
-    <!-- <router-link :to="{name: 'village'}">마을로 돌아가기</router-link> -->
-    <!-- </nav> -->
+  <div class="background">
     <h1 style="margin-top: 5rem">Recommended Movies</h1>
-    <!-- <div
-      class="row row-cols-1 row-cols-md-3 g-4"
-      style="
-        margin-bottom: 10%;
-        margin-top: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
-      "
-    > -->
-    <!-- </div> -->
-    <div class="container">
-      <div class="card">
-        <MovieCardView
-          v-for="movie in getList"
-          :key="movie.id"
-          :movie="movie"
-          class="card_thumb"
-        />
+    <div class="cardbox">
+      <div class="page-content">
+          <MovieCardView
+            v-for="movie in getList"
+            :key="movie.id"
+            :movie="movie"
+          />
       </div>
     </div>
     <button @click="goPass">Add Movie</button>
@@ -58,14 +44,13 @@ export default {
       this.$router.push({ name: "password" });
     },
   },
-  // created() {
-  //   this.id = this.$route.params.id
-  //   console.log(this.id)
-  // }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/assets/scss/moviecard.scss";
+.cardbox {
+  display: flex;
+  justify-content: center;
+}
 </style>
-

@@ -1,25 +1,11 @@
 <template>
-  <!-- <div class="container">
-    <div class="card"> -->
-  <div class="card_thumb">
-    <img :src="poster_path" class="card__image" alt="" />
-    <figcaption class="card__caption">
-      <h2 class="card__title">
-        {{ movie.title }}
-      </h2>
-      <p class="card__snippet">
-        {{ movie.overview }}
-      </p>
-      <a href="" class="card__button">Read more</a>
-    </figcaption>
-    <!-- <img :src="poster_path" class="card-img-top" alt="" /> -->
-    <!-- <div class="card-body"> -->
-    <!-- <h5 class="card-title">{{ movie.title }}</h5> -->
-    <!-- </div> -->
-    <MovieDetail :movie="movie" />
+  <div class="card" :style="{backgroundImage:`url('${poster_path}')`}">
+    <div class="content">
+      <h2 class="copy">{{ movie.title }}</h2>
+      <button @click="go_modal">More Detail</button>
+    </div>
+      <MovieDetail :movie="movie" />
   </div>
-  <!-- </div>
-  </div> -->
 </template>
 
 <script>
@@ -35,6 +21,7 @@ export default {
     return {
       youTubeURL: null,
       movie_d: null,
+
     };
   },
   props: {
@@ -45,10 +32,14 @@ export default {
       const baseURL = "https://image.tmdb.org/t/p/w500";
       return baseURL + this.movie.poster_path;
     },
+  
   },
 };
 </script>
 
 <style lang="scss">
 @import "@/assets/scss/moviecard.scss";
+.card {
+   background-size: cover
+}
 </style>

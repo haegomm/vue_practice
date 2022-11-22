@@ -16,31 +16,18 @@
       <div class="snowflake">❆</div>
     </div>
     <div class="container">
-      <img id="b1" class="shadow-pop-tr" src="../assets/5.png" alt="" />
-      <img id="b2" class="shadow-pop-tr" src="../assets/7.png" alt="" />
-      <img id="b3" class="shadow-pop-tr" src="../assets/8.png" alt="" />
-      <img id="b4" class="shadow-pop-tr" src="../assets/9.png" alt="" />
-      <img id="b5" class="shadow-pop-tr" src="../assets/10.png" alt="" />
-      <img id="b6" class="shadow-pop-tr" src="../assets/11.png" alt="" />
-      <img id="b7" class="shadow-pop-tr" src="../assets/12-1.png" alt="" />
-      <img id="b8" class="shadow-pop-tr" src="../assets/13-1.png" alt="" />
-      <img id="b9" class="shadow-pop-tr" src="../assets/14.png" alt="" />
-      <img id="b10" class="shadow-pop-tr" src="../assets/15.png" alt="" />
+      <img id="b1" class="shadow-pop-tr" src="../assets/img/5.png" alt="" />
+      <!-- <img id="b2" class="shadow-pop-tr" src="../assets/img/7.png" alt="" />
+      <img id="b3" class="shadow-pop-tr" src="../assets/img/8.png" alt="" />
+      <img id="b4" class="shadow-pop-tr" src="../assets/img/9-1.png" alt="" />
+      <img id="b5" class="shadow-pop-tr" src="../assets/img/10.png" alt="" />
+      <img id="b6" class="shadow-pop-tr" src="../assets/img/11-1.png" alt="" />
+      <img id="b7" class="shadow-pop-tr" src="../assets/img/12-1.png" alt="" />
+      <img id="b8" class="shadow-pop-tr" src="../assets/img/13-1.png" alt="" />
+      <img id="b9" class="shadow-pop-tr" src="../assets/img/14.png" alt="" />
+      <img id="b10" class="shadow-pop-tr" src="../assets/img/15.png" alt="" /> -->
       <!-- <img id="t1" class="shadow-pop-tr" src="../assets/20.png" alt="" /> -->
     </div>
-    <!-- <carousel :per-page='1'>
-      <slide>
-        <img src="../assets/city.png" usemap="#image-map" class="mapper" >
-        <map name="image-map" id="image-map">
-          <area target="_parent" alt="이가은" title="이가은" href="http://localhost:8080/recommend/0" coords="407,560,327,318" shape="rect" >
-          <area target="_top" alt="송대현" title="송대현" href="http://localhost:8080/recommend/1" coords="752,562,644,311" shape="rect" >
-        </map> 
-
-      </slide>
-      <slide>
-
-      </slide>
-    </carousel> -->
   </div>
 </template>
 
@@ -54,7 +41,6 @@ export default {
       snowing: false,
     };
 
-    // < src="https://kit.fontawesome.com/150aa59347.js" crossorigin="anonymous">
   },
   methods: {
     getOwner(event) {
@@ -106,7 +92,7 @@ button {
   filter: brightness(1.1);
 }
 
-.container {
+/* .container {
   position: relative;
   top: 41vh;
   width: 100%;
@@ -114,7 +100,7 @@ button {
   margin: 0;
   padding: 0;
   max-width: 100%;
-}
+} */
 
 img {
   display: inline-block;
@@ -123,53 +109,53 @@ img {
 }
 
 #b1 {
-  bottom: 14.1%;
+  bottom: 14.1vh;
   left: 0;
 }
 
 #b2 {
-  bottom: 14.1%;
-  left: 8.4%;
+  bottom: 14.1vh;
+  left: 10%;
 }
 
 #b3 {
-  bottom: 14.1%;
-  left: 17.75%;
+  bottom: 14.1vh;
+  left: 22%;
 }
 
 #b4 {
-  bottom: 14.1%;
-  left: 23.1%;
+  bottom: 12.7vh;
+  left: 30%;
 }
 
 #b5 {
-  bottom: 14.1%;
-  left: 31.5%;
+  bottom: 14.1vh;
+  left: 40%;
 }
 
 #b6 {
-  bottom: 14.1%;
-  left: 36.7%;
+  bottom: 14.1vh;
+  left: 47.2%;
 }
 
 #b7 {
-  bottom: 14.1%;
-  left: 44.5%;
+  bottom: 13.95vh;
+  left: 58%;
 }
 
 #b8 {
-  bottom: 14.1%;
-  left: 49.4%;
+  bottom: 13.1%;
+  left: 65%;
 }
 
 #b9 {
   bottom: 14.1vh;
-  left: 58.4%;
+  left: 76.5%;
 }
 
 #b10 {
-  bottom: 0vh;
-  left: 68%;
+  bottom: 14.1vh;
+  right: 0;
 }
 
 img:hover {

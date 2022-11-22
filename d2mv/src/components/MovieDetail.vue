@@ -4,7 +4,7 @@
       <div class="modal__content">
         <div>
           <div>
-            <img :src="poster_path" alt="">
+            <img class="backposter" :src="poster_path" alt="">
           </div>
         </div>
         <div>
@@ -160,4 +160,5 @@ export default {
   border-color: #2d3748;
   background-color: #1a202c;
 }
+
 </style>
